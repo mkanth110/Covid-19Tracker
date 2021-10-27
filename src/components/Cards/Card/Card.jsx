@@ -11,7 +11,7 @@ const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }
       <Typography color="textSecondary" gutterBottom>
         {cardTitle}
       </Typography>
-      <Typography variant="h5" component="h2">
+      <Typography variant="h6" component="h2">
         <CountUp start={0} end={value} duration={2.75} separator="," />
       </Typography>
       <Typography color="textSecondary">
