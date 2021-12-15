@@ -2,7 +2,7 @@
 
 ### [Live Site](https://react-covid19-tracking.netlify.app/)
 
-![COVID-19 Tracker](https://ibb.co/sHXWTX7)
+![COVID-19 Tracker](https://i.ibb.co/TLNWQNy/Screen-Shot-2021-12-14-at-7-20-41-PM.png)
 
 ## Introduction
 
