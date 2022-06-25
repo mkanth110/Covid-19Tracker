@@ -5,7 +5,7 @@ import { fetchDailyData } from '../../api';
 
 import styles from './Chart.module.css';
 
-const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
+const Chart = ({ data: { confirmed, deaths }, country }) => {
   const [dailyData, setDailyData] = useState({});
 
   useEffect(() => {
@@ -22,12 +22,12 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     confirmed ? (
       <Bar
         data={{
-          labels: ['Infected', 'Recovered', 'Deaths'],
+          labels: ['Infected', 'Deaths'],
           datasets: [
             {
               label: 'People',
-              backgroundColor: ['rgba(0, 0, 255, 0.5)', 'rgba(0, 255, 0, 0.5)', 'rgba(255, 0, 0, 0.5)'],
-              data: [confirmed.value, recovered.value, deaths.value],
+              backgroundColor: ['rgba(0, 0, 255, 0.5)', 'rgba(255, 0, 0, 0.5)'],
+              data: [confirmed.value, deaths.value],
             },
           ],
         }}
